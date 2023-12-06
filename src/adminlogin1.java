@@ -44,12 +44,12 @@ public class adminlogin1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BOOKIT.COM", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(51, 0, 0))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "E-Learning Platform", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(51, 0, 0))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 0, 0));
-        jLabel1.setText("ADMINISTRATOR LOGIN ");
+        jLabel1.setText("FACULTY LOGIN ");
 
         in_email.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         in_email.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ public class adminlogin1 extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(51, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lenovo\\Downloads\\images\\images\\close.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/icons8-cross-24.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -123,10 +123,10 @@ public class adminlogin1 extends javax.swing.JFrame {
                                 .addGap(49, 49, 49)
                                 .addComponent(jButton2)))
                         .addGap(227, 227, 227))
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(241, 241, 241))
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(292, 292, 292))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,6 +163,7 @@ public class adminlogin1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void in_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_in_emailActionPerformed
@@ -186,7 +187,7 @@ public class adminlogin1 extends javax.swing.JFrame {
         else if(email.equals("admin") && password.equals("admin")){
             check=1;
             setVisible(false);
-            new home().setVisible(true);
+            new Faculty_dashboard1().setVisible(true);
         }
 
     }//GEN-LAST:event_jButton2ActionPerformed

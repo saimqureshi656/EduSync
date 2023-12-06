@@ -6,7 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -48,8 +48,8 @@
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="BOOKIT.COM&#xa;">
-              <Font PropertyName="font" name="Times New Roman" size="24" style="1"/>
+            <TitledBorder justification="2" title="EduSync">
+              <Font PropertyName="font" name="Rage Italic" size="36" style="1"/>
               <Color PropertyName="color" blue="0" green="0" red="33" type="rgb"/>
             </TitledBorder>
           </Border>
@@ -61,10 +61,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="130" max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="176" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" pref="190" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" pref="185" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -76,10 +76,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jButton3" min="-2" pref="33" max="-2" attributes="0"/>
-                  <EmptySpace pref="165" max="32767" attributes="0"/>
+                  <EmptySpace pref="138" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="jButton1" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="jButton2" alignment="3" min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
               </Group>
@@ -99,9 +99,9 @@
               <Color blue="0" green="0" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Lenovo\Documents\NetBeansProjects\Project\src\pictures\icons8-administrator-male-skin-type-7-48.png"/>
+              <Image iconType="3" name="/pictures/icons8-teacher-60.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Admin"/>
+            <Property name="text" type="java.lang.String" value="Faculty"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -119,9 +119,9 @@
               <Color blue="0" green="0" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Lenovo\Documents\NetBeansProjects\Project\src\pictures\icons8-reception-64.png"/>
+              <Image iconType="3" name="/pictures/icons8-student-80.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="User"/>
+            <Property name="text" type="java.lang.String" value="Student"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -131,6 +131,9 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="33" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/pictures/icons8-cross-24.png"/>
             </Property>
           </Properties>
           <Events>

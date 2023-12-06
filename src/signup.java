@@ -1,4 +1,4 @@
-import prjct.*;
+import prjct.emailsender;
 import javax.swing.JOptionPane;
 import prjct.insertupdatedelete;
 
@@ -52,7 +52,7 @@ public class signup extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BOOKIT.COM\n\n", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 24), new java.awt.Color(51, 0, 0))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EduSync ", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Rage Italic", 1, 36), new java.awt.Color(51, 0, 0))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 0, 0));
@@ -107,6 +107,7 @@ public class signup extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(51, 0, 0));
         jButton2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Sign Up");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +121,7 @@ public class signup extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(51, 0, 0));
         jButton3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Go to Login Page");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +143,7 @@ public class signup extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(51, 0, 0));
         jButton4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Forgot Password");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,7 +152,6 @@ public class signup extends javax.swing.JFrame {
         });
 
         jButton1.setBackground(new java.awt.Color(51, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lenovo\\Downloads\\images\\images\\close.png")); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -298,7 +300,7 @@ public class signup extends javax.swing.JFrame {
             String Query;
             Query="insert into users values('"+name+"','"+email+"','"+password+"','"+securityquestion+"','"+answer+"','"+address+"','false')";
             insertupdatedelete.setdata(Query, "Registerd Succesfully");
-            //emailsender.emailll(email,"Registration form Confirmation","<h4>Dear "+name+",\nYou're Sucessfully Registered on Bookit.com<h4>","text/html");
+            emailsender.emailll(email,"Account Created Sucessfullly","<h4>Dear "+name+",\nWe are delighted to inform you that your account has been successfully created on EduSync. Welcome to our community!<h4>","text/html");
             setVisible(false);
             new signup().setVisible(true);
         }
